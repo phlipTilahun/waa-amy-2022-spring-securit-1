@@ -14,8 +14,6 @@ public class UserDto implements UserDetails {
 	private String username;
 
 	private String password;
-	
-	private boolean isRoot=false;
 
 	private Collection<? extends GrantedAuthority> authorities;
 
@@ -92,13 +90,6 @@ public class UserDto implements UserDetails {
 		return password;
 	}
 
-	public boolean isRoot() {
-		return isRoot;
-	}
-
-	public void setRoot(boolean isRoot) {
-		this.isRoot = isRoot;
-	}
 
 	
 }
