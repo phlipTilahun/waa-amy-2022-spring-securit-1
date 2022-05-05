@@ -14,15 +14,6 @@ services:
       POSTGRES_DB: postgres
     networks:
       - myNetwork
-  myapp:
-    container_name: myapp
-    build:
-      context: ../
-    restart: always
-    ports:
-      - "8081:8858"
-    networks:
-      - myNetwork
 networks:
   myNetwork:
 volumes:
