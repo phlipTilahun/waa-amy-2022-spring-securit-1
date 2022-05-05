@@ -1,0 +1,8 @@
+to start docker compose :
+    docker-compose up -d [specify the name if u want to run a specific container]
+stop container:
+    docker-compose stop
+list runing contanaire:
+    docker-compose ps
+log into the container:
+    docker exec -it hubDb bash
